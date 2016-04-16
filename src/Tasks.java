@@ -36,7 +36,6 @@ public class Tasks {
 				try {
 					task.evenNumbers();
 				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
