@@ -7,7 +7,7 @@ import java.sql.Statement;
 public class SelectExample {
 	public static void main(String[] args) throws Exception {
 		try (Connection con = DBUtil.getConnection()) {
-			String insertSQL = "SELECT * FROM DEMO";
+			String insertSQL = "SELECT * FROM DEMO WHERE id=1243";
 			Statement stmt = con.createStatement();
 			ResultSet rs = stmt.executeQuery(insertSQL);
 			while(rs.next()){
